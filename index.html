@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Яндекс Дом</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"></a>
+		</div>
+
+		<label for="menu" class="menu_icon"></label>
+		<input type="checkbox" id="menu">
+		<nav>
+			<ul>
+				<li>
+					<a href="#" class="active">События</a>
+				</li>
+				<li>
+					<a href="#">Сводка</a>
+				</li>
+				<li>
+					<a href="#">Устройства</a>
+				</li>
+				<li>
+					<a href="#">Сценарии</a>
+				</li>
+				<li>
+					<a href="video.html">Видеонаблюдение</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="central-part">
+		<main>
+			<div class="main-part">
+				<div class="news_line">Лента событий</div>
+				<div class="container">
+					<div class="card card_size-l">
+						<div class="card_top">
+							<img class="icons" src="assets/stats.svg">
+							<div class="title">Еженедельный отчет по расходам ресурсов</div>
+							<img class="cross" src="assets/cross.svg">
+						</div>
+						<div class="devices_and_time">
+							<div>Сенсоры потребления</div>
+							<div>19:00, Сегодня</div>
+						</div>
+						<div class="description_size-l">Так держать! За последнюю неделю вы потратили на 10% меньше ресурсов, чем неделей
+							ранее.</div>
+						<img class="chart" src="assets/Richdata.png">
+						<img class="next_icon" src="assets/Next.svg">
+					</div>
+
+					<div class="card card_size-m">
+						<div class="card_top">
+							<img class="icons" src="assets/thermal.svg">
+							<div class="title">Изменен климатический режим</div>
+							<img class="cross" src="assets/cross.svg">
+						</div>
+						<div class="devices_and_time">
+							<div>Сенсор микроклимата</div>
+							<div>18:30, Сегодня</div>
+						</div>
+						<div class="description_size-m">Установлен климатический режим «Фиджи»</div>
+						<div class="card_bottom">
+							<div class="left_flex">
+								<div>Температура:&nbsp; </div>
+								<div class="exact_data">24C</div>
+							</div>
+							<div class="right_flex">
+								<div>Влажность:&nbsp; </div>
+								<div class="exact_data">80%</div>
+							</div>
+							<img class="next_icon" src="assets/Next.svg">
+						</div>
+					</div>
+
+					<div class="card card_size-m card_type-critical">
+						<div class="card_top">
+							<img class="icons" src="assets/ac-white.svg">
+							<div class="title">Невозможно включить кондиционер</div>
+							<img class="cross" src="assets/cross-white.svg">
+						</div>
+						<div class="devices_and_time">
+							<div>Сенсоры потребления</div>
+							<div>19:00, Сегодня</div>
+						</div>
+						<div class="card corpus card_bottom">
+							<div class="description">В комнате открыто окно, закройте его и повторите попытку</div>
+							<img class="next_icon" src="assets/next-white.svg">
+						</div>
+					</div>
+
+					<div class="card card_size-m">
+						<!-- <img class="next_icon" src="assets/Next.svg"> -->
+						<div class="card_top">
+							<img class="icons" src="assets/music.svg">
+							<div class="title">Музыка включена</div>
+							<img class="cross" src="assets/cross.svg">
+						</div>
+						<div class="devices_and_time">
+							<div>Яндекс.Станция</div>
+							<div>18:16, Сегодня</div>
+						</div>
+						<div class="description_size-m">Сейчас проигрывается:</div>
+						<div class="music">
+							<img class="album-cover" src="assets/album-cover.png">
+							<div class="song_and_range">
+								<div class="name_of_the_song">Florence &amp; The Machine - Big God</div>
+								<div class="range_and_time">
+									<input type="range" min="0" max="271" step="2" value="50" class="range">
+									<div class="details">4:31</div>
+								</div>
+							</div>
+						</div>
+						<div class="control_panel">
+							<img class="key prev" src="assets/Prev.svg">
+							<img class="key next" src="assets/Prev.svg">
+							<input type="range" min="0" max="271" step="2" value="50" class="range_1">
+							<div class="details">80%</div>
+						</div>
+					</div>
+
+					<div class="card card_size-m">
+						<!-- <img class="next_icon" src="assets/Next.svg"> -->
+						<div class="card_top">
+							<img class="icons" src="assets/fridge.svg">
+							<div class="title">Заканчивается молоко</div>
+							<img class="cross" src="assets/cross.svg">
+						</div>
+						<div class="devices_and_time">
+							<div>Холодильник</div>
+							<div>17:23, Сегодня</div>
+						</div>
+						<div class="description_size-m">Кажется, в холодильнике заканчивается молоко. Вы хотите добавить его в список
+							покупок?</div>
+						<div class="card_bottom">
+							<div class="buttons">
+								<div class="button button-yes">
+									<div class="choice">Да</div>
+								</div>
+								<div class="button button-no">
+									<div class="choice">Нет</div>
+								</div>
+							</div>
+							<img class="next_icon" src="assets/Next.svg">
+						</div>
+					</div>
+
+					<div class="card card_size-l card_type-critical">
+						<!-- <img class="next_icon" src="assets/next-white.svg"> -->
+						<div class="card_top">
+							<img class="icons" src="assets/cam-white.svg">
+							<div class="title">Пылесос застрял</div>
+							<img class="cross" src="assets/cross-white.svg">
+						</div>
+						<div class="devices_and_time">
+							<div>Сенсор движения</div>
+							<div>16:20, Сегодня</div>
+						</div>
+						<div class="card corpus">
+							<div class="description">Робопылесос не смог сменить свое местоположение в течение последних 3 минут. Похоже,
+								ему нужна помощь.</div>
+							<img class="camera" src="assets/image.jpg">
+							<div class="user_tools">
+								<div class="brightless">
+									<div class="brightless_name">Яркость:&nbsp;</div>
+									<div class="brightless_value"></div>
+								</div>
+								<div class="zoom">
+									<div class="zoom_name">Масштаб:&nbsp;</div>
+									<div class="zoom_value"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Помощь</a>
+					</li>
+					<li>
+						<a href="#">Обратная связь</a>
+					</li>
+					<li>
+						<a href="#">Разработчикам</a>
+					</li>
+					<li>
+						<a href="#">Условия использования</a>
+					</li>
+				</ul>
+			</nav>
+			<p>© 2001-2018 ООО "Яндекс"</p>
+		</footer>
+	</div>
+</body>
+
+<template id="template-card-s">
+	<div class="card card_size-s">
+		<div class="card_top">
+			<img class="icons">
+			<div class="title"></div>
+			<img class="cross" src="assets/cross.svg">
+		</div>
+		<div class="devices"></div>
+		<div class="time"></div>
+		<div class="card_bottom">
+			<div class="description_size-m description_size-s"></div>
+			<img class="next_icon" src="assets/Next.svg">
+		</div>
+	</div>
+</template>
+
+
+<script type="text/javascript" src="template.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
