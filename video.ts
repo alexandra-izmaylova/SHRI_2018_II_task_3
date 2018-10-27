@@ -1,7 +1,7 @@
 let brightness = 100;
 let contrast = 100;
 
-function expandPlayer(event: MouseEvent) {
+function expandPlayer(event: MouseEvent): void {
 	const element = (event.currentTarget as Element).parentElement!;
 	if (element.style.position === 'fixed') return;
 	const position = element.getBoundingClientRect();
@@ -18,7 +18,7 @@ function expandPlayer(event: MouseEvent) {
 	element.style.width = size.width;
 	element.style.zIndex = '999';
 
-	setTimeout(() => {
+	setTimeout((): void => {
 		element.style.transition = 'all 0.5s';
 		element.style.left = '0';
 		element.style.top = '0';
@@ -26,10 +26,10 @@ function expandPlayer(event: MouseEvent) {
 		element.style.height = '100%';
 	}, 100);
 
-	setTimeout(() => element.classList.add('active'), 600);
+	setTimeout((): void => element.classList.add('active'), 600);
 }
 
-function collapsePlayer(event: MouseEvent) {
+function collapsePlayer(event: MouseEvent): void {
 	const element = (event.currentTarget as Element).parentElement!;
 	if (!element.classList.contains('active')) return;
 	element.classList.remove('active');
@@ -46,7 +46,7 @@ function collapsePlayer(event: MouseEvent) {
 	element.style.width = size.width;
 	element.style.zIndex = '0';
 
-	setTimeout(() => {
+	setTimeout((): void => {
 		element.style.position = 'static';
 		element.style.transition = null;
 		element.style.left = '0';
@@ -56,7 +56,7 @@ function collapsePlayer(event: MouseEvent) {
 	}, 600);
 }
 
-function initVideo(video: HTMLVideoElement, url: string) {
+function initVideo(video: HTMLVideoElement, url: string): void {
 	video.addEventListener('click', expandPlayer);
 	if (Hls.isSupported()) {
 		var hls = new Hls();
@@ -73,7 +73,7 @@ function initVideo(video: HTMLVideoElement, url: string) {
 	}
 }
 
-function initButton(button: HTMLElement) {
+function initButton(button: HTMLElement): void {
 	button.addEventListener('click', collapsePlayer);
 }
 
@@ -81,7 +81,7 @@ function initButtonBrightness(
 	range: HTMLInputElement,
 	video: HTMLElement,
 	values: HTMLElement
-) {
+): void {
 	range.addEventListener('input', function() {
 		brightness = parseFloat(range.value);
 		values.textContent = `Яркость: ${brightness / 2} %`;
@@ -94,7 +94,7 @@ function initButtonContrast(
 	range: HTMLInputElement,
 	video: HTMLElement,
 	values: HTMLElement
-) {
+): void {
 	range.addEventListener('input', function() {
 		contrast = parseFloat(range.value);
 		values.textContent = `Контраст: ${contrast / 5} %`;
